@@ -2,7 +2,7 @@ extern crate project_euler;
 use project_euler::*;
 
 fn main() {
-	println!("{}", ex9::ex9());
+	println!("{}", ex4::ex4());
 }
 
 #[allow(dead_code)]
