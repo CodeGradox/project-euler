@@ -14,7 +14,7 @@ mod tests {
 	use super::*;
 
 	#[bench]
-	fn bench_ex8(b: &mut Bencher) {
-		b.iter(|| ex8::ex8());
+	fn bench(b: &mut Bencher) {
+		b.iter(|| ex4::ex4());
 	}
 }
