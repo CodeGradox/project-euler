@@ -1,4 +1,3 @@
-#[allow(dead_code)]
 pub fn ex5() {
 	let mut t = 2520;
 	loop {
