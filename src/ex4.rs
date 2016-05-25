@@ -1,5 +1,6 @@
+// 906609
+
 pub fn ex4() -> i32 {
-	// 906609
 	let mut result = 0;
 	for x in 100..1000 {
 		for y in x..1000 {

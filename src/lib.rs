@@ -15,6 +15,6 @@ mod tests {
 
 	#[bench]
 	fn bench(b: &mut Bencher) {
-		b.iter(|| ex4::ex4());
+		b.iter(|| ex10::ex10());
 	}
 }
