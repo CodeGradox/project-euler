@@ -18,8 +18,13 @@ mod tests {
 	use test::Bencher;
 	use super::*;
 
-	#[bench]
+	/*#[bench]
 	fn bench(b: &mut Bencher) {
 		b.iter(|| ex10::ex10());
+	}*/
+
+	#[bench]
+	fn bench_primes(b: &mut Bencher) {
+		b.iter(|| primes::primes(2000000));
 	}
 }
