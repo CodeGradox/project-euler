@@ -17,6 +17,6 @@ pub fn primes(n: usize) -> Vec<usize> {
 	a[2..]
 		.iter()
 		.zip(2..)
-		.filter_map(|(a, b)| if *a { Some(b) } else { None })
+		.filter_map(|(isprime, num)| if *isprime { Some(num) } else { None })
 		.collect::<Vec<usize>>()
 }
