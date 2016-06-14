@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from itertools import takewhile
 
 # Finds all primes below n
