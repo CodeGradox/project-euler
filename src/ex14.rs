@@ -1,7 +1,7 @@
 pub fn ex14() -> u64 {
 	let mut largest = (1, 1); // n, cnt
 
-	for i in 1..1000000 {
+	for i in 1..1_000_000 {
 		let mut n = i;
 		let mut cnt = 1;
 

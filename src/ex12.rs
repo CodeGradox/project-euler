@@ -1,7 +1,7 @@
 pub fn ex12() -> u64 {
 	let mut c = 1;
 	loop {
-		let n = c*(c+1)/2;
+		let n = c * (c + 1) / 2;
 		let d = divisors(n);
 		println!("{} {}", n, d);
 		if d > 4 {

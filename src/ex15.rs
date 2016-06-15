@@ -11,9 +11,5 @@ pub fn ex15() -> u64 {
 			v[i][j] = v[i-1][j] + v[i][j-1];
 		}
 	}
-
-	/*for i in 0..s {
-		println!("{:?}", v[i]);
-	}*/
 	v[s-1][s-1]
 }
