@@ -11,7 +11,7 @@ def primes(n):
 	# loop from 2 to √n
 	for i in takewhile(lambda x: x * x < n, xrange(2, n)):
 		if a[i]:
-			# mark the factors as not prime
+			# mark the multiples of i as not prime
 			for j in xrange(i * i, n, i):
 				a[j] = False
 
