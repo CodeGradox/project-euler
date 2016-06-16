@@ -1,5 +1,5 @@
-pub fn ex14() -> u64 {
-	let mut largest = (1, 1); // n, cnt
+pub fn ex14() {
+	let mut largest: (u64, u64) = (1, 1); // n, cnt
 
 	for i in 1..1_000_000 {
 		let mut n = i;
@@ -19,5 +19,5 @@ pub fn ex14() -> u64 {
 			largest.1 = cnt;
 		}
 	}
-	largest.0
+	println!("{}", largest.0);
 }

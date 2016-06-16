@@ -1,7 +1,7 @@
 // 906609
 
-pub fn ex4() -> i32 {
-	let mut result = 0;
+pub fn ex4() {
+	let mut result = 0u64;
 	for x in 100..1000 {
 		for y in x..1000 {
 			let s = (x * y).to_string();
@@ -13,5 +13,5 @@ pub fn ex4() -> i32 {
 			}
 		}
 	}
-	result
+	println!("{}", result);
 }

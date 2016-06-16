@@ -2,7 +2,7 @@ extern crate num;
 
 use num::bigint::{BigInt, ToBigInt};
 
-pub fn ex13() -> String {
+pub fn ex13() {
 	let s: &str = "\
 	37107287533902102798797998220837590246510135740250 \
 	46376937677490009712648124896970078050417018260538 \
@@ -111,5 +111,5 @@ pub fn ex13() -> String {
 		sum = sum + BigInt::parse_bytes(i.as_bytes(), 10).unwrap();
 	}
 
-	String::from(&sum.to_str_radix(10)[..10])
+	println!("{}", &sum.to_str_radix(10)[..10]);
 }

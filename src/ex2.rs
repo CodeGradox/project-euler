@@ -1,6 +1,6 @@
 // 4613732
 
-pub fn ex2() -> i32{
+pub fn ex2() {
 	let (a, b, mut sum) = (&mut 1, &mut 1, 0);
 
 	while *b < 4_000_000 {
@@ -10,5 +10,5 @@ pub fn ex2() -> i32{
 			sum += *b;
 		}
 	}
-	sum
+	println!("{}", sum);
 }

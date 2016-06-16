@@ -1,6 +1,6 @@
 // 23514624000
 
-pub fn ex8() -> u64 {
+pub fn ex8() {
 	let s: &str = "\
 	73167176531330624919225119674426574742355349194934\
 	96983520312774506326239578318016984801869478851843\
@@ -25,7 +25,7 @@ pub fn ex8() -> u64 {
 
 	let v: Vec<u64> = s.chars().map(|x| x.to_digit(10).unwrap() as u64).collect::<Vec<u64>>();
 
-	let mut largest = 0;
+	let mut largest = 0u64;
 	let n = 13;
 	for i in 0..(v.len() - n - 1) {
 		let tmp = v[i..i+n].iter().fold(1u64, |acc, x| acc * x);
@@ -33,5 +33,5 @@ pub fn ex8() -> u64 {
 			largest = tmp;
 		}
 	}
-	largest
+	println!("{}", largest);
 }
