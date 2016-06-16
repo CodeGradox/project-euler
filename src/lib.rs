@@ -17,19 +17,15 @@ pub mod ex13;
 pub mod ex14;
 pub mod ex15;
 pub mod ex16;
+pub mod ex20;
 
 #[cfg(test)]
 mod tests {
 	use test::Bencher;
 	use super::*;
 
-	/*#[bench]
-	fn bench(b: &mut Bencher) {
-		b.iter(|| ex10::ex10());
-	}*/
-
 	#[bench]
-	fn bench_primes(b: &mut Bencher) {
-		b.iter(|| primes::primes(2000000));
+	fn bench_primes_bit(b: &mut Bencher) {
+		b.iter(|| primes::Primes::new(75000));
 	}
 }
