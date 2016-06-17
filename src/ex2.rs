@@ -6,7 +6,7 @@ pub fn ex2() {
 	let mut sum = 0;
 
 	while b < 4_000_000 {
-		b += a;
+		a += b;
 		swap(&mut a, &mut b);
 		if b % 2 == 0 {
 			sum += b;
