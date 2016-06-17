@@ -18,6 +18,7 @@ pub mod ex14;
 pub mod ex15;
 pub mod ex16;
 pub mod ex20;
+pub mod ex25;
 
 #[cfg(test)]
 mod tests {
