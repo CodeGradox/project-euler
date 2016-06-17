@@ -106,8 +106,9 @@ pub fn ex13() {
 	53503534226472524250874054075591789781264330331690";
 
 	let mut sum = ToBigInt::to_bigint(&0).unwrap();
+	let split = s.split_whitespace();
 
-	for i in s.split_whitespace() {
+	for i in split {
 		sum = sum + BigInt::parse_bytes(i.as_bytes(), 10).unwrap();
 	}
 
