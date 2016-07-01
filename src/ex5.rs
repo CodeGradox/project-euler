@@ -1,15 +1,8 @@
 pub fn ex5() {
-	let mut t = 2520;
-	loop {
-		for i in 11..21 {
-			if t%i != 0 {
-				break;
-			}
-			if i == 20 {
-				println!("{}", t);
-				return;
-			}
+	for i in (1..).map(|x| x * 2520) {
+		if (11..21).all(|j| i % j == 0) {
+			println!("{}", i);
+			break;
 		}
-		t += 2520;
 	}
 }
