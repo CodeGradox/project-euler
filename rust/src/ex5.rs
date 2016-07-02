@@ -6,3 +6,10 @@ pub fn ex5() {
 		}
 	}
 }
+
+pub fn ex5_f() {
+	let val = (1..).map(|x| x * 2520)
+		.skip_while(|x| !(11..21).all(|y| x % y == 0))
+		.nth(0);
+	println!("{:?}", val);
+}
