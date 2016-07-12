@@ -3,6 +3,7 @@ name = "project_euler"
 version = "0.1.0"
 dependencies = [
  "num 0.1.32 (registry+https://github.com/rust-lang/crates.io-index)",
+ "sieve_of_eratosthenes 0.1.0 (git+https://github.com/CodeGradox/sieve_of_eratosthenes.git)",
 ]
 
 [[package]]
@@ -88,4 +89,9 @@ dependencies = [
 name = "rustc-serialize"
 version = "0.3.19"
 source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "sieve_of_eratosthenes"
+version = "0.1.0"
+source = "git+https://github.com/CodeGradox/sieve_of_eratosthenes.git#2c35065e3189182e390863c898fcce9330c209fd"
 

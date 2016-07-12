@@ -5,3 +5,4 @@ authors = ["Magnus Åsrud <magnusasrud92@gmail.com>"]
 
 [dependencies]
 num = "0.1.32"
+sieve_of_eratosthenes = { git = "https://github.com/CodeGradox/sieve_of_eratosthenes.git" }

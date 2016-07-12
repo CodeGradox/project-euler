@@ -1,8 +1,8 @@
 #![feature(test)]
 extern crate test;
 extern crate num;
+extern crate sieve_of_eratosthenes;
 
-pub mod primes;
 pub mod ex1;
 pub mod ex2;
 pub mod ex3;
