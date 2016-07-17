@@ -1,5 +1,3 @@
-// 906609
-
 pub fn ex4() {
 	let mut result = 0u64;
 	for x in 100..1000 {
