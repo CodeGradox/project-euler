@@ -21,12 +21,17 @@ pub fn ex8() {
 	05886116467109405077541002256983155200055935729725\
 	71636269561882670428252483600823257530420752963450";
 
-	let v: Vec<u64> = s.chars().map(|x| x.to_digit(10).unwrap() as u64).collect::<Vec<u64>>();
+	let v: Vec<u64> = s
+		.chars()
+		.map(|x| x.to_digit(10).unwrap() as u64)
+		.collect();
 
 	let mut largest = 0u64;
 	let n = 13;
 	for i in 0..(v.len() - n - 1) {
-		let tmp = v[i..i+n].iter().fold(1u64, |acc, x| acc * x);
+		let tmp = v[i..i+n]
+			.iter()
+			.product::<u64>();
 		if tmp > largest {
 			largest = tmp;
 		}

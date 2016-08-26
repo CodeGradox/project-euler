@@ -32,7 +32,9 @@ pub fn ex11() {
 		for y in 0..n {
 			// Horisontal
 			if y < n-3 {
-				let t = v[x*n+y..x*n+y+4].iter().fold(1, |a, x| a * x);
+				let t = v[x*n+y..x*n+y+4]
+					.iter()
+					.fold(1, |a, x| a * x);
 				if t > result { result = t }
 			}
 			// Vertical
